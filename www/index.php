@@ -5,7 +5,6 @@ require_once('classes/db.class.php');
 
 // create an instance of the TBP_SoapClient class, which will be used to call the TouchBasePro web services
 $soapClient = new TBP_SoapClient(TBP_WSDL_URL, TBP_USERNAME, TBP_PASSWORD);
-$result = $soapClient->saveSubscriber('64a02c4d-d44e-4f85-a608-5b0e295a1ddd', 'john.smith@test.com');
 
 // store the API fields into variables, so they can dynamically be used to retrieve fields from restul objects 
 $tbp_api_subscriber_id_field = TBP_API_SUBSCRIBER_ID_FIELD;
