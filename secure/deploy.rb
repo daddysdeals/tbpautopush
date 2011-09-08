@@ -36,6 +36,6 @@ namespace :tbpautoimport do
         desc "Create the various symlinks to content not being deployed"
         task :config, :roles => :current do
         	# tasks to copy the config file from shared to the correct place go here
-		    run ""
+		    run "cp #{shared_path}/secure/config.php #{current_path}/secure/; "
         end
 end
